@@ -1,0 +1,15 @@
+import cv2 as cv
+
+img = cv.imread("solar-system.jpg")
+cv.putText(img, "Sun", (20, 300), cv.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
+cv.putText(img, "Naptunes", (1080, 300), cv.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
+cv.putText(img, "Washington", (900, 300), cv.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
+cv.putText(img, "Aztec", (700, 300), cv.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
+cv.putText(img, "Monkey", (400, 300), cv.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
+cv.putText(img, "Rerth", (300, 300), cv.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
+cv.putText(img, "Jupytang", (500, 300), cv.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
+cv.putText(img, "Aryanplanet", (187, 300), cv.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
+cv.putText(img, "Moon", (120, 300), cv.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255))
+cv.imwrite('solarSystemWithName.jpg', img)
+cv.imshow("Output", img)
+cv.waitKey(0)
